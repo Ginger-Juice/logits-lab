@@ -1,0 +1,10 @@
+Sat Oct 17 17:46:25 CST 2026
+NAME                                             ID              SIZE     PROCESSOR    CONTEXT    RUNNER      UNTIL               
+modelscope.cn/unsloth/Qwen3.8-27B-GGUF:Q4_K_M    95c9635e54b0    18 GB    100% GPU     32768      llamacpp    59 minutes from now    
+memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+18687 MiB, 32760 MiB, 49 %
+pid, used_gpu_memory [MiB]
+6081, 18678 MiB
+6081 /usr/local/lib/ollama/llama-server --model /root/autodl-tmp/ollama-models/blobs/sha256-322e194ff79741c7baa497c240f677f54b201b0efab44ca8e50f122b39123482 --port 42905 --host 127.0.0.1 --no-webui --offline -c 32768 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --mmproj /root/autodl-tmp/ollama-models/blobs/sha256-83ee4f4f205fa514161778c41df1ea14144faa0f713510893b63c2395f5c2d53 --flash-attn auto -b 1024 -ub 1024 --context-shift --keep 4
+   PID %CPU   RSS CMD
+  6081  982 7042116 /usr/local/lib/ollama/llama-server --model /root/autodl-tmp/ollama-models/blobs/sha256-322e194ff79741c7baa497c240f677f54b201b0efab44ca8e50f122b39123482 --port 42905 --host 127.0.0.1 --no-webui --offline -c 32768 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --mmproj /root/autodl-tmp/ollama-models/blobs/sha256-83ee4f4f205fa514161778c41df1ea14144faa0f713510893b63c2395f5c2d53 --flash-attn auto -b 1024 -ub 1024 --context-shift --keep 4

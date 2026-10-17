@@ -1,0 +1,11 @@
+17:time=2026-10-17T17:41:06.114+08:00 level=WARN source=sched.go:558 msg="model architecture does not currently support parallel requests" architecture=qwen35
+218:load_tensors: offloaded 66/66 layers to GPU
+219:load_tensors:   CPU_Mapped model buffer size =   682.03 MiB
+220:load_tensors:        CUDA0 model buffer size = 14674.45 MiB
+244:llama_kv_cache:      CUDA0 KV buffer size =  2048.00 MiB
+245:llama_kv_cache: size = 2048.00 MiB ( 32768 cells,  16 layers,  1/1 seqs), K (f16): 1024.00 MiB, V (f16): 1024.00 MiB
+248:llama_memory_recurrent:      CUDA0 RS buffer size =   149.62 MiB
+256:sched_reserve:      CUDA0 compute buffer size =   348.04 MiB
+257:sched_reserve:  CUDA_Host compute buffer size =   144.05 MiB
+299:reserve_compute_meta:      CUDA0 compute buffer size =   248.10 MiB
+300:reserve_compute_meta:        CPU compute buffer size =    24.93 MiB

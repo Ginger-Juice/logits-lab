@@ -1,0 +1,2 @@
+prompt_tokens,gen_tokens,stream_chunks,done_reason,ttft_s,wall_s,prefill_tok_s,decode_tok_s,tpot_ms,tpot_wall_ms,start_offset_s,conc,target_len,rep,req,round_wall_s,round_agg_tok_s
+570,256,254,length,1.4927,14.159,552.3,20.08,49.81,49.67,0.0,1,512,0,0,14.159,18.08

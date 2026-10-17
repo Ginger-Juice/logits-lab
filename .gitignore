@@ -1,0 +1,7 @@
+local-lab/.venv/
+local-lab/.pipcache/
+local-lab/wheels/
+local-lab/models/
+**/__pycache__/
+*.pyc
+.cursor/

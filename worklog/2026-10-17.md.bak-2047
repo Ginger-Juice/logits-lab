@@ -1,0 +1,69 @@
+# 工作笔记 2026-10-17（周六）
+
+> 记录人：斯内普教授 ｜ 主题：AutoDL RTX 4080 SUPER 32GB 上部署并压测 Qwen3.8-27B（Ollama Q4_K_M）
+> 所有数字均为实测；标"估算"的为推算值。
+
+## 1. 今日目标
+- 连通 AutoDL 4080S 服务器，清理数据盘，部署 Qwen3.8-27B 量化版并完成基础压测与并发压测。
+- 整理报告并把服务器上的脚本与原始数据备份到本地。
+
+## 2. 环境
+| 项 | 值 |
+|---|---|
+| GPU | RTX 4080 SUPER 32GB（32760 MiB），驱动 580.142，CUDA 13.0 |
+| 系统 | Ubuntu 22.04.5，16 核，62 GB 内存，数据盘 50 GB |
+| 推理框架 | Ollama 0.40.5 |
+| 模型 | unsloth Qwen3.8-27B-GGUF Q4_K_M（ModelScope 来源，非 Ollama 官方 qwen3.8 标签） |
+| 连接方式 | 本机 Windows 作跳板，SSH 密钥登录 `ssh -p 32258 root@connect.westc.seetacloud.com` |
+
+## 3. 操作经过
+1. **连通服务器**：配置 SSH 公钥登录（未覆盖原有 id_ed25519）。
+2. **数据盘清理**：数据盘被自行下载的 28 GB 官方 FP8 权重占用，按决定删除，释放到 50 GB 可用。
+3. **部署模型**：`ollama pull qwen3.8:27b` 走 Cloudflare R2 超时（开学术加速也不行），改从 ModelScope 拉 `unsloth/Qwen3.8-27B-GGUF:Q4_K_M`。
+4. **启动方式**：`/root/autodl-tmp/snape/start_ollama.sh`（加载学术加速、`OLLAMA_MODELS=/root/autodl-tmp/ollama-models`）。
+5. **Run 1 基础压测**：并发 1、num_ctx 32768、每档 3 次取中位数。
+6. **Run 2 并发压测**：设置 `OLLAMA_NUM_PARALLEL=4`，并发 1/2/4 × 输入约 570/4150 tokens，固定生成 256 tokens。
+7. **报告与备份**：完成完整报告；服务器脚本与原始数据备份到 `D:\knowleen\4080s-backup\`。
+
+## 4. 结果
+### Run 1（并发 1，ctx 32K）
+| 输入 tokens | TTFT | Prefill | Decode | TPOT |
+|---|---|---|---|---|
+| 533 | 2.41 s | 578 tok/s | 20.25 tok/s | 49.4 ms |
+| 4113 | 3.37 s | 1518 tok/s | 20.23 tok/s | 49.4 ms |
+| 16403 | 10.70 s | 1878 tok/s | 20.23 tok/s | 49.4 ms |
+
+### Run 2（num_ctx 32768，GEN 256，中位数）
+| 并发 | 输入 | TTFT 中位（最小到最大） | 单请求 decode | 总吞吐 |
+|---|---|---|---|---|
+| 1 | 570 | 2.43 s（2.32 到 2.44） | 20.06 tok/s | 16.95 tok/s |
+| 1 | 4150 | 4.04 s（3.94 到 4.43） | 20.07 tok/s | 15.24 tok/s |
+| 2 | 570 | 10.18 s（2.53 到 18.04） | 20.05 tok/s | 16.74 tok/s |
+| 2 | 4150 | 13.06 s（4.03 到 21.72） | 20.03 tok/s | 14.92 tok/s |
+| 4 | 570 | 25.37 s（2.54 到 48.63） | 20.05 tok/s | 16.92 tok/s |
+| 4 | 4150 | 29.51 s（3.98 到 55.95） | 20.00 tok/s | 15.02 tok/s |
+
+### 显存
+- `ollama ps`：18 GB，100% GPU；`nvidia-smi` 18687 / 32760 MiB；66/66 层在 GPU。
+- 权重 14674 MiB（GPU）+ 682 MiB（CPU 侧）；KV 缓存 2048 MiB（32768 × 16 层 f16，与每 token 64 KiB 的估算一致）；循环状态 149.6 MiB。
+
+## 5. 结论与发现
+- **单请求 decode 很稳，约 20 tok/s**，不随输入长度变化，符合混合架构（48 层线性注意力状态固定，只有 16 层有 KV）。
+- **Ollama 对 qwen35 架构不支持并行**：日志 `model architecture does not currently support parallel requests`，实际只开 1 个处理槽；并发 2、4 只是排队，TTFT 随排队位置叠加，总吞吐不涨。
+- 混合架构下 Ollama 不复用 prompt 缓存，每次都完整 prefill。
+- 首次加载约 115 s，正式压测前必须预热。
+
+## 6. 踩坑记录
+- 远程执行 `pkill -f 'ollama serve'` 会连带杀掉 SSH 会话本身，改用脚本按进程名精确停止。
+- PowerShell 会在本地展开双引号里的 `$(...)`，远程命令要避开 `$` 或改为上传脚本执行。
+- raw 模式下模型很早就输出 EOS（只生成 46 到 114 tokens），改为非 raw 加长文提示后能稳定生成满 256 tokens。
+- 中文文件名经 PowerShell 管道传输会乱码，改用 base64 传输。
+
+## 7. 产出文件
+- 完整报告：`C:\Users\ASUS\4080s-ollama-q4km-report.md`（建议移到 `D:\knowleen\reports\`）
+- 备份：`D:\knowleen\4080s-backup\snape\`（脚本、CSV、日志）、`D:\knowleen\4080s-backup\root-scripts\`（服务器 /root 下自带脚本）
+
+## 8. 待办 / 下一步
+- [ ] 释放 4080S 实例（数据已备份，由本人决定）。
+- [ ] 真并发测试需绕过 Ollama：`llama-server -np 4` 或 SGLang/vLLM。
+- [ ] 5090：官方 FP8 已下载完成（29 GB，耗时约 2 h 03 min），正在用 SGLang 实测开/关思考下的最大上下文；注意 start.sh 里开着超长自动截断，需排除假成功。

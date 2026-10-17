@@ -1,0 +1,6 @@
+warmup: {'t_start': 14689234.809384964, 't_end': 14689255.758127209, 'prompt_tokens': 120, 'gen_tokens': 256, 'stream_chunks': 254, 'done_reason': 'length', 'ttft_s': 8.1945, 'wall_s': 20.949, 'prefill_tok_s': 242.6, 'decode_tok_s': 19.83, 'tpot_ms': 50.43, 'tpot_wall_ms': 50.02}
+conc=1 len=512 rep=0 round_wall=14.159s total_gen=256 agg=18.08 tok/s
+   {'prompt_tokens': 570, 'gen_tokens': 256, 'stream_chunks': 254, 'done_reason': 'length', 'ttft_s': 1.4927, 'wall_s': 14.159, 'prefill_tok_s': 552.3, 'decode_tok_s': 20.08, 'tpot_ms': 49.81, 'tpot_wall_ms': 49.67, 'start_offset_s': 0.0, 'conc': 1, 'target_len': 512, 'rep': 0, 'req': 0, 'round_wall_s': 14.159, 'round_agg_tok_s': 18.08}
+
+summary (median):
+conc=1 len~512: prompt_tok=570 gen_tok min/med/max=256/256/256 TTFT=1.4927s prefill=552.3 decode=20.08 tok/s TPOT=49.81ms TPOT_wall=49.67ms agg=18.08 tok/s

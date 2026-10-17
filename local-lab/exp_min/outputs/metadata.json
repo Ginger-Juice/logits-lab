@@ -1,0 +1,166 @@
+{
+  "timings_s": {
+    "load": 5.72,
+    "sanity": 9.15,
+    "gen": 501.37,
+    "feat": 11.7,
+    "analysis": 107.77
+  },
+  "peak_vram_gb": {
+    "load": 3.506,
+    "sanity": 3.533,
+    "gen": 3.574,
+    "feat": 3.653
+  },
+  "created": "2026-10-17T23:04:28.709886",
+  "seed": 1234,
+  "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19044-SP0",
+  "versions": {
+    "torch": "2.7.1+cu118",
+    "torch_cuda": "11.8",
+    "transformers": "5.12.1",
+    "accelerate": "1.15.0",
+    "modelscope": "1.40.2",
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "pandas": "3.0.6",
+    "safetensors": "0.8.0"
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 3080",
+    "total_mem_gb": 10.0,
+    "driver": "528.49"
+  },
+  "linear_attn_fast_path": {
+    "is_fast_path_available": false,
+    "fla": "not available (ModuleNotFoundError)",
+    "causal_conv1d": "not available (ModuleNotFoundError)"
+  },
+  "model": {
+    "path": "D:\\knowleen\\local-lab\\models\\Qwen3.5-2B",
+    "repo": "Qwen/Qwen3.5-2B (ModelScope)",
+    "revision_info": {
+      "source": "ModelScope Qwen/Qwen3.5-2B",
+      "branch": "master",
+      "downloaded": "2026-10-17",
+      "method": "curl https://modelscope.cn/models/Qwen/Qwen3.5-2B/resolve/master/<file>",
+      "file_revisions": {
+        "config.json": "5bc562c789648e2cd69b2377526939f5f72060e9",
+        "model.safetensors-00001-of-00001.safetensors": "5bc562c789648e2cd69b2377526939f5f72060e9",
+        "tokenizer_config.json": "5a09c8938499e2b2f764dcb8c2d61f772ad0f815",
+        "chat_template.jinja": "5a09c8938499e2b2f764dcb8c2d61f772ad0f815"
+      },
+      "api_sha256_prefix": {
+        "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc6",
+        "config.json": "ed1c1723241f"
+      }
+    },
+    "class": "Qwen3_5ForCausalLM",
+    "model_type_full": "qwen3_5",
+    "model_type_text": "qwen3_5_text",
+    "num_hidden_layers": 24,
+    "layer_types": [
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention"
+    ],
+    "hidden_size": 2048,
+    "n_params": 1881825088,
+    "missing_keys": [],
+    "unexpected_keys_count": 0,
+    "unexpected_keys_sample": [],
+    "mismatched_keys": [],
+    "sha256": {
+      "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1"
+    }
+  },
+  "vram_after_load_gb": 3.505,
+  "tokens": {
+    "im_end": 248046,
+    "eos_ids": [
+      248044,
+      248046
+    ],
+    "think_end": 248069,
+    "think_end_roundtrip": "</think>"
+  },
+  "sanity": {
+    "on": {
+      "prompt_tail": "25? Answer briefly.<|im_end|>\n<|im_start|>assistant\n<think>\n",
+      "n_gen": 88,
+      "finished": true,
+      "think_tokens": 83,
+      "answer_text": "\n\n42",
+      "think_text_head": "Thinking Process:\n\n1.  **Analyze the Request:** The user is asking for the sum of 17 and 25, and wants the answer to be brief.\n\n2.  **Calculate:** 17 + 25 = 42.\n\n3.  **Format:** Keep it brief as requested.\n\n4.  **Final Output:** 42.cw\n",
+      "correct_42": true
+    },
+    "off": {
+      "prompt_tail": "briefly.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "n_gen": 3,
+      "finished": true,
+      "think_tokens": 0,
+      "answer_text": "42",
+      "think_text_head": "",
+      "correct_42": true
+    }
+  },
+  "gen_summary": {
+    "on": {
+      "n": 20,
+      "acc": 0.65,
+      "acc_arith": 0.6,
+      "acc_fact": 0.7,
+      "n_finished": 13,
+      "n_truncated_in_think": 7,
+      "mean_gen_tokens": 627.15,
+      "mean_think_tokens": 597.05,
+      "total_gen_time_s": 426.63
+    },
+    "off": {
+      "n": 20,
+      "acc": 1.0,
+      "acc_arith": 1.0,
+      "acc_fact": 1.0,
+      "n_finished": 20,
+      "n_truncated_in_think": 0,
+      "mean_gen_tokens": 107.1,
+      "mean_think_tokens": 0.0,
+      "total_gen_time_s": 74.72
+    }
+  },
+  "feat_seq_lens": {
+    "on": {
+      "max": 1063,
+      "mean": 653.7
+    },
+    "off": {
+      "max": 225,
+      "mean": 135.3
+    }
+  },
+  "feat_note": "index 0 = embedding output; index i = output of decoder layer i (before final RMSNorm). EOS tokens stripped before teacher forcing."
+}

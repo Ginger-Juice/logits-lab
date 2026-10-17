@@ -1,0 +1,22 @@
+[
+ {"id": "a01", "type": "arith", "question": "Tom has 3 boxes with 12 apples in each box. He gives away 7 apples. How many apples does he have left?", "answers": ["29"]},
+ {"id": "a02", "type": "arith", "question": "A train travels at 60 km per hour for 2.5 hours. How many kilometers does it travel?", "answers": ["150"]},
+ {"id": "a03", "type": "arith", "question": "Sara buys 4 notebooks at 3 dollars each and a pen for 2 dollars. How many dollars does she spend in total?", "answers": ["14"]},
+ {"id": "a04", "type": "arith", "question": "A class has 28 students. If they form groups of 4, how many groups are there?", "answers": ["7"]},
+ {"id": "a05", "type": "arith", "question": "John is 3 times as old as his son. His son is 11 years old. How old is John?", "answers": ["33"]},
+ {"id": "a06", "type": "arith", "question": "A rectangle is 9 cm long and 6 cm wide. What is its area in square centimeters?", "answers": ["54"]},
+ {"id": "a07", "type": "arith", "question": "Lily read 15 pages on Monday, 22 pages on Tuesday, and 18 pages on Wednesday. How many pages did she read in total?", "answers": ["55"]},
+ {"id": "a08", "type": "arith", "question": "A shirt costs 80 dollars and is on sale for 25 percent off. What is the sale price in dollars?", "answers": ["60"]},
+ {"id": "a09", "type": "arith", "question": "There are 5 shelves with 17 books each. 9 books are removed. How many books remain?", "answers": ["76"]},
+ {"id": "a10", "type": "arith", "question": "Mike saves 45 dollars per week. How many dollars has he saved after 8 weeks?", "answers": ["360"]},
+ {"id": "f01", "type": "fact", "question": "What is the capital city of France?", "answers": ["Paris"]},
+ {"id": "f02", "type": "fact", "question": "What is the chemical symbol for gold?", "answers": ["Au"]},
+ {"id": "f03", "type": "fact", "question": "How many continents are there on Earth?", "answers": ["7", "seven"]},
+ {"id": "f04", "type": "fact", "question": "Which planet is known as the Red Planet?", "answers": ["Mars"]},
+ {"id": "f05", "type": "fact", "question": "Who wrote the play Romeo and Juliet?", "answers": ["Shakespeare"]},
+ {"id": "f06", "type": "fact", "question": "What is the largest ocean on Earth?", "answers": ["Pacific"]},
+ {"id": "f07", "type": "fact", "question": "At what temperature in degrees Celsius does water boil at sea level?", "answers": ["100"]},
+ {"id": "f08", "type": "fact", "question": "What is the capital city of Japan?", "answers": ["Tokyo"]},
+ {"id": "f09", "type": "fact", "question": "What gas do plants absorb from the air for photosynthesis?", "answers": ["carbon dioxide", "CO2", "CO₂"]},
+ {"id": "f10", "type": "fact", "question": "How many sides does a hexagon have?", "answers": ["6", "six"]}
+]
