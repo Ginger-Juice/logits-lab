@@ -1,0 +1,25 @@
+cond,pos,n_valid,n_nan_rows,nan_qids
+off,last_prompt,40,0,
+off,think_start,40,0,
+off,think_end,40,0,
+off,answer_start,40,0,
+off,last_token,40,0,
+off,think_mean,0,40,15 29 32 35 63 71 94 129 132 140 171 182 185 186 201 234 239 304 374 484 511 552 619 708 726 902 949 954 985 991 996 1030 1054 1108 1139 1185 1192 1231 1261 1276
+low,last_prompt,40,0,
+low,think_start,40,0,
+low,think_end,40,0,
+low,answer_start,40,0,
+low,last_token,40,0,
+low,think_mean,40,0,
+medium,last_prompt,40,0,
+medium,think_start,40,0,
+medium,think_end,40,0,
+medium,answer_start,40,0,
+medium,last_token,40,0,
+medium,think_mean,40,0,
+xhigh,last_prompt,40,0,
+xhigh,think_start,40,0,
+xhigh,think_end,38,2,304 552
+xhigh,answer_start,38,2,304 552
+xhigh,last_token,40,0,
+xhigh,think_mean,40,0,

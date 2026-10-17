@@ -1,0 +1,254 @@
+[02:00:51] loading model
+[02:00:57] loaded Qwen3_5ForCausalLM layers 24 vram_gb 3.505
+[02:00:57] capture carrier and 20 questions
+[02:01:03] capture done 5.9 s; user_end delta L2 median per layer [0.69, 1.12, 1.59, 2.91, 3.29, 3.55, 3.67, 4.81, 4.51, 4.9, 4.94, 5.43, 5.58, 6.0, 7.01, 8.67, 10.18, 12.34, 13.97, 15.33, 18.37, 20.05, 21.99, 24.11, 31.06]
+[02:01:03] logit lens over 25 layers
+[02:01:04] lens user_end median gold rank by layer {'0': 47, '1': 224192, '2': 245287, '3': 231325, '4': 242284, '5': 194570, '6': 233657, '7': 181632, '8': 212047, '9': 152193, '10': 194249, '11': 205638, '12': 178041, '13': 167553, '14': 107569, '15': 124660, '16': 172398, '17': 140828, '18': 128425, '19': 55568, '20': 64731, '21': 132621, '22': 134043, '23': 22706, '24': 700}
+[02:02:48] loading model
+[02:02:51] loaded Qwen3_5ForCausalLM layers 24 vram_gb 3.505
+[02:02:51] capture carrier and 20 questions
+[02:02:57] capture done 5.5 s; user_end delta L2 median per layer [0.0, 0.18, 0.48, 1.24, 1.73, 1.96, 1.91, 2.34, 2.26, 2.29, 2.38, 2.6, 2.61, 2.85, 3.3, 4.06, 5.04, 6.33, 7.2, 8.04, 9.21, 10.17, 11.66, 13.58, 21.0]
+[02:02:57] logit lens over 25 layers
+[02:02:58] lens user_end median gold rank by layer {'0': 51, '1': 68534, '2': 41106, '3': 24032, '4': 111354, '5': 134877, '6': 149516, '7': 183629, '8': 138824, '9': 83281, '10': 71712, '11': 123051, '12': 81948, '13': 102668, '14': 98662, '15': 134247, '16': 129046, '17': 31955, '18': 64509, '19': 22732, '20': 89701, '21': 156732, '22': 137175, '23': 29384, '24': 682}
+[02:03:20] loading model
+[02:03:24] loaded Qwen3_5ForCausalLM layers 24 vram_gb 3.505
+[02:03:25] baseline carrier: Please provide the question you would like me to answer.<|im_end|>
+[02:03:25] unpatched a01 hit False 11<|im_end|>
+[02:03:36] sweep 20 last user_end a=0.5 layer=0 f10 own=False other=False
+[02:03:47] sweep 40 last user_end a=0.5 layer=1 f10 own=False other=False
+[02:03:57] sweep 60 last user_end a=0.5 layer=2 f10 own=False other=False
+[02:04:08] sweep 80 last user_end a=0.5 layer=3 f10 own=False other=False
+[02:04:19] sweep 100 last user_end a=0.5 layer=4 f10 own=False other=False
+[02:04:29] sweep 120 last user_end a=0.5 layer=5 f10 own=False other=False
+[02:04:40] sweep 140 last user_end a=0.5 layer=6 f10 own=False other=False
+[02:04:51] sweep 160 last user_end a=0.5 layer=7 f10 own=False other=False
+[02:05:02] sweep 180 last user_end a=0.5 layer=8 f10 own=False other=False
+[02:05:12] sweep 200 last user_end a=0.5 layer=9 f10 own=False other=False
+[02:05:23] sweep 220 last user_end a=0.5 layer=10 f10 own=False other=False
+[02:05:34] sweep 240 last user_end a=0.5 layer=11 f10 own=False other=False
+[02:05:44] sweep 260 last user_end a=0.5 layer=12 f10 own=False other=False
+[02:05:55] sweep 280 last user_end a=0.5 layer=13 f10 own=False other=False
+[02:06:05] sweep 300 last user_end a=0.5 layer=14 f10 own=False other=False
+[02:06:15] sweep 320 last user_end a=0.5 layer=15 f10 own=False other=False
+[02:06:25] sweep 340 last user_end a=0.5 layer=16 f10 own=False other=False
+[02:06:36] sweep 360 last user_end a=0.5 layer=17 f10 own=False other=False
+[02:06:46] sweep 380 last user_end a=0.5 layer=18 f10 own=False other=False
+[02:06:57] sweep 400 last user_end a=0.5 layer=19 f10 own=False other=False
+[02:07:07] sweep 420 last user_end a=0.5 layer=20 f10 own=False other=False
+[02:07:17] sweep 440 last user_end a=0.5 layer=21 f10 own=False other=False
+[02:07:28] sweep 460 last user_end a=0.5 layer=22 f10 own=False other=False
+[02:07:39] sweep 480 last user_end a=0.5 layer=23 f10 own=False other=False
+[02:07:50] sweep 500 last user_end a=0.5 layer=24 f10 own=False other=False
+[02:08:01] sweep 520 last user_end a=1.0 layer=0 f10 own=False other=False
+[02:08:12] sweep 540 last user_end a=1.0 layer=1 f10 own=False other=False
+[02:08:23] sweep 560 last user_end a=1.0 layer=2 f10 own=False other=False
+[02:08:34] sweep 580 last user_end a=1.0 layer=3 f10 own=False other=False
+[02:08:45] sweep 600 last user_end a=1.0 layer=4 f10 own=False other=False
+[02:08:55] sweep 620 last user_end a=1.0 layer=5 f10 own=False other=False
+[02:09:06] sweep 640 last user_end a=1.0 layer=6 f10 own=False other=False
+[02:09:17] sweep 660 last user_end a=1.0 layer=7 f10 own=False other=False
+[02:09:28] sweep 680 last user_end a=1.0 layer=8 f10 own=False other=False
+[02:09:39] sweep 700 last user_end a=1.0 layer=9 f10 own=False other=False
+[02:09:50] sweep 720 last user_end a=1.0 layer=10 f10 own=False other=False
+[02:10:01] sweep 740 last user_end a=1.0 layer=11 f10 own=False other=False
+[02:10:11] sweep 760 last user_end a=1.0 layer=12 f10 own=False other=False
+[02:10:22] sweep 780 last user_end a=1.0 layer=13 f10 own=False other=False
+[02:10:33] sweep 800 last user_end a=1.0 layer=14 f10 own=False other=False
+[02:10:44] sweep 820 last user_end a=1.0 layer=15 f10 own=False other=False
+[02:10:55] sweep 840 last user_end a=1.0 layer=16 f10 own=False other=False
+[02:11:05] sweep 860 last user_end a=1.0 layer=17 f10 own=False other=False
+[02:11:16] sweep 880 last user_end a=1.0 layer=18 f10 own=False other=False
+[02:11:27] sweep 900 last user_end a=1.0 layer=19 f10 own=False other=False
+[02:11:38] sweep 920 last user_end a=1.0 layer=20 f10 own=False other=False
+[02:11:48] sweep 940 last user_end a=1.0 layer=21 f10 own=False other=False
+[02:11:59] sweep 960 last user_end a=1.0 layer=22 f10 own=False other=False
+[02:12:10] sweep 980 last user_end a=1.0 layer=23 f10 own=False other=False
+[02:12:21] sweep 1000 last user_end a=1.0 layer=24 f10 own=False other=False
+[02:12:32] sweep 1020 last user_end a=2.0 layer=0 f10 own=False other=False
+[02:12:43] sweep 1040 last user_end a=2.0 layer=1 f10 own=False other=False
+[02:12:54] sweep 1060 last user_end a=2.0 layer=2 f10 own=False other=False
+[02:13:05] sweep 1080 last user_end a=2.0 layer=3 f10 own=False other=False
+[02:13:15] sweep 1100 last user_end a=2.0 layer=4 f10 own=False other=False
+[02:13:27] sweep 1120 last user_end a=2.0 layer=5 f10 own=False other=False
+[02:13:38] sweep 1140 last user_end a=2.0 layer=6 f10 own=False other=False
+[02:13:49] sweep 1160 last user_end a=2.0 layer=7 f10 own=False other=False
+[02:13:59] sweep 1180 last user_end a=2.0 layer=8 f10 own=False other=False
+[02:14:10] sweep 1200 last user_end a=2.0 layer=9 f10 own=False other=False
+[02:14:21] sweep 1220 last user_end a=2.0 layer=10 f10 own=False other=False
+[02:14:31] sweep 1240 last user_end a=2.0 layer=11 f10 own=False other=False
+[02:14:42] sweep 1260 last user_end a=2.0 layer=12 f10 own=False other=False
+[02:14:52] sweep 1280 last user_end a=2.0 layer=13 f10 own=False other=False
+[02:15:02] sweep 1300 last user_end a=2.0 layer=14 f10 own=False other=False
+[02:15:12] sweep 1320 last user_end a=2.0 layer=15 f10 own=False other=False
+[02:15:22] sweep 1340 last user_end a=2.0 layer=16 f10 own=False other=False
+[02:15:33] sweep 1360 last user_end a=2.0 layer=17 f10 own=False other=False
+[02:15:43] sweep 1380 last user_end a=2.0 layer=18 f10 own=False other=False
+[02:15:52] sweep 1400 last user_end a=2.0 layer=19 f10 own=False other=False
+[02:16:02] sweep 1420 last user_end a=2.0 layer=20 f10 own=False other=False
+[02:16:12] sweep 1440 last user_end a=2.0 layer=21 f10 own=False other=False
+[02:16:22] sweep 1460 last user_end a=2.0 layer=22 f10 own=False other=False
+[02:16:32] sweep 1480 last user_end a=2.0 layer=23 f10 own=False other=False
+[02:16:42] sweep 1500 last user_end a=2.0 layer=24 f10 own=False other=False
+[02:16:51] sweep 1520 last last a=1.0 layer=0 f10 own=False other=False
+[02:17:01] sweep 1540 last last a=1.0 layer=1 f10 own=False other=False
+[02:17:11] sweep 1560 last last a=1.0 layer=2 f10 own=False other=False
+[02:17:21] sweep 1580 last last a=1.0 layer=3 f10 own=False other=False
+[02:17:31] sweep 1600 last last a=1.0 layer=4 f10 own=False other=False
+[02:17:40] sweep 1620 last last a=1.0 layer=5 f10 own=False other=False
+[02:17:50] sweep 1640 last last a=1.0 layer=6 f10 own=False other=False
+[02:18:00] sweep 1660 last last a=1.0 layer=7 f10 own=False other=False
+[02:18:10] sweep 1680 last last a=1.0 layer=8 f10 own=False other=False
+[02:18:20] sweep 1700 last last a=1.0 layer=9 f10 own=False other=False
+[02:18:26] sweep 1720 last last a=1.0 layer=10 f10 own=False other=False
+[02:18:33] sweep 1740 last last a=1.0 layer=11 f10 own=False other=False
+[02:18:39] sweep 1760 last last a=1.0 layer=12 f10 own=False other=False
+[02:18:45] sweep 1780 last last a=1.0 layer=13 f10 own=False other=False
+[02:18:52] sweep 1800 last last a=1.0 layer=14 f10 own=False other=False
+[02:18:56] sweep 1820 last last a=1.0 layer=15 f10 own=False other=False
+[02:19:00] sweep 1840 last last a=1.0 layer=16 f10 own=False other=False
+[02:19:04] sweep 1860 last last a=1.0 layer=17 f10 own=False other=False
+[02:19:08] sweep 1880 last last a=1.0 layer=18 f10 own=False other=False
+[02:19:12] sweep 1900 last last a=1.0 layer=19 f10 own=True other=False
+[02:19:17] sweep 1920 last last a=1.0 layer=20 f10 own=True other=False
+[02:19:23] sweep 1940 last last a=1.0 layer=21 f10 own=True other=False
+[02:19:32] sweep 1960 last last a=1.0 layer=22 f10 own=True other=False
+[02:19:37] sweep 1980 last last a=1.0 layer=23 f10 own=True other=False
+[02:19:41] sweep 2000 last last a=1.0 layer=24 f10 own=True other=False
+[02:19:51] sweep 2020 last user_mean a=1.0 layer=0 f10 own=False other=False
+[02:20:01] sweep 2040 last user_mean a=1.0 layer=1 f10 own=False other=False
+[02:20:11] sweep 2060 last user_mean a=1.0 layer=2 f10 own=False other=False
+[02:20:20] sweep 2080 last user_mean a=1.0 layer=3 f10 own=False other=False
+[02:20:30] sweep 2100 last user_mean a=1.0 layer=4 f10 own=False other=False
+[02:20:40] sweep 2120 last user_mean a=1.0 layer=5 f10 own=False other=False
+[02:20:50] sweep 2140 last user_mean a=1.0 layer=6 f10 own=False other=False
+[02:21:00] sweep 2160 last user_mean a=1.0 layer=7 f10 own=False other=False
+[02:21:09] sweep 2180 last user_mean a=1.0 layer=8 f10 own=False other=False
+[02:21:19] sweep 2200 last user_mean a=1.0 layer=9 f10 own=False other=False
+[02:21:29] sweep 2220 last user_mean a=1.0 layer=10 f10 own=False other=False
+[02:21:39] sweep 2240 last user_mean a=1.0 layer=11 f10 own=False other=False
+[02:21:48] sweep 2260 last user_mean a=1.0 layer=12 f10 own=False other=False
+[02:21:58] sweep 2280 last user_mean a=1.0 layer=13 f10 own=False other=False
+[02:22:08] sweep 2300 last user_mean a=1.0 layer=14 f10 own=False other=False
+[02:22:17] sweep 2320 last user_mean a=1.0 layer=15 f10 own=False other=False
+[02:22:27] sweep 2340 last user_mean a=1.0 layer=16 f10 own=False other=False
+[02:22:37] sweep 2360 last user_mean a=1.0 layer=17 f10 own=False other=False
+[02:22:47] sweep 2380 last user_mean a=1.0 layer=18 f10 own=False other=False
+[02:22:57] sweep 2400 last user_mean a=1.0 layer=19 f10 own=False other=False
+[02:23:06] sweep 2420 last user_mean a=1.0 layer=20 f10 own=False other=False
+[02:23:16] sweep 2440 last user_mean a=1.0 layer=21 f10 own=False other=False
+[02:23:26] sweep 2460 last user_mean a=1.0 layer=22 f10 own=False other=False
+[02:23:36] sweep 2480 last user_mean a=1.0 layer=23 f10 own=False other=False
+[02:23:45] sweep 2500 last user_mean a=1.0 layer=24 f10 own=False other=False
+[02:23:55] sweep 2520 last all_pos a=1.0 layer=0 f10 own=False other=False
+[02:24:05] sweep 2540 last all_pos a=1.0 layer=1 f10 own=False other=False
+[02:24:15] sweep 2560 last all_pos a=1.0 layer=2 f10 own=False other=False
+[02:24:26] sweep 2580 last all_pos a=1.0 layer=3 f10 own=False other=False
+[02:24:35] sweep 2600 last all_pos a=1.0 layer=4 f10 own=False other=False
+[02:24:47] sweep 2620 last all_pos a=1.0 layer=5 f10 own=False other=False
+[02:24:58] sweep 2640 last all_pos a=1.0 layer=6 f10 own=False other=False
+[02:25:10] sweep 2660 last all_pos a=1.0 layer=7 f10 own=False other=False
+[02:25:27] sweep 2680 last all_pos a=1.0 layer=8 f10 own=False other=False
+[02:25:37] sweep 2700 last all_pos a=1.0 layer=9 f10 own=False other=False
+[02:25:49] sweep 2720 last all_pos a=1.0 layer=10 f10 own=False other=False
+[02:25:59] sweep 2740 last all_pos a=1.0 layer=11 f10 own=False other=False
+[02:26:09] sweep 2760 last all_pos a=1.0 layer=12 f10 own=False other=False
+[02:26:18] sweep 2780 last all_pos a=1.0 layer=13 f10 own=False other=False
+[02:26:28] sweep 2800 last all_pos a=1.0 layer=14 f10 own=False other=False
+[02:26:38] sweep 2820 last all_pos a=1.0 layer=15 f10 own=False other=False
+[02:26:48] sweep 2840 last all_pos a=1.0 layer=16 f10 own=False other=False
+[02:26:58] sweep 2860 last all_pos a=1.0 layer=17 f10 own=False other=False
+[02:27:08] sweep 2880 last all_pos a=1.0 layer=18 f10 own=False other=False
+[02:27:17] sweep 2900 last all_pos a=1.0 layer=19 f10 own=False other=False
+[02:27:26] sweep 2920 last all_pos a=1.0 layer=20 f10 own=False other=False
+[02:27:36] sweep 2940 last all_pos a=1.0 layer=21 f10 own=False other=False
+[02:27:46] sweep 2960 last all_pos a=1.0 layer=22 f10 own=False other=False
+[02:27:57] sweep 2980 last all_pos a=1.0 layer=23 f10 own=False other=False
+[02:28:10] sweep 3000 last all_pos a=1.0 layer=24 f10 own=False other=False
+[02:28:10] sweep finished 3000 new gens in 1484.2 s
+[02:28:10] wrote D:\knowleen\local-lab\exp_min\outputs\recall\REPORT.md
+[02:28:10] BEST {'direction': 'last', 'alpha': 1.0, 'layer': 19, 'n': 20, 'recall': 0.35, 'intrusion': 0.0, 'score': 0.35}
+[02:29:43] loading model
+[02:29:47] loaded Qwen3_5ForCausalLM layers 24 vram_gb 3.505
+[02:29:48] unpatched a01 hit False 11<|im_end|>
+[02:29:58] sweep 20 last last a=0.5 layer=0 f10 own=False other=False
+[02:30:08] sweep 40 last last a=0.5 layer=1 f10 own=False other=False
+[02:30:17] sweep 60 last last a=0.5 layer=2 f10 own=False other=False
+[02:30:27] sweep 80 last last a=0.5 layer=3 f10 own=False other=False
+[02:30:37] sweep 100 last last a=0.5 layer=4 f10 own=False other=False
+[02:30:47] sweep 120 last last a=0.5 layer=5 f10 own=False other=False
+[02:30:57] sweep 140 last last a=0.5 layer=6 f10 own=False other=False
+[02:31:07] sweep 160 last last a=0.5 layer=7 f10 own=False other=False
+[02:31:16] sweep 180 last last a=0.5 layer=8 f10 own=False other=False
+[02:31:26] sweep 200 last last a=0.5 layer=9 f10 own=False other=False
+[02:31:36] sweep 220 last last a=0.5 layer=10 f10 own=False other=False
+[02:31:46] sweep 240 last last a=0.5 layer=11 f10 own=False other=False
+[02:31:56] sweep 260 last last a=0.5 layer=12 f10 own=False other=False
+[02:32:06] sweep 280 last last a=0.5 layer=13 f10 own=False other=False
+[02:32:15] sweep 300 last last a=0.5 layer=14 f10 own=False other=False
+[02:32:22] sweep 320 last last a=0.5 layer=15 f10 own=False other=False
+[02:32:25] sweep 340 last last a=0.5 layer=16 f10 own=False other=False
+[02:32:29] sweep 360 last last a=0.5 layer=17 f10 own=False other=False
+[02:32:32] sweep 380 last last a=0.5 layer=18 f10 own=False other=False
+[02:32:38] sweep 400 last last a=0.5 layer=19 f10 own=False other=False
+[02:32:44] sweep 420 last last a=0.5 layer=20 f10 own=False other=False
+[02:32:51] sweep 440 last last a=0.5 layer=21 f10 own=False other=False
+[02:32:54] sweep 460 last last a=0.5 layer=22 f10 own=False other=False
+[02:33:00] sweep 480 last last a=0.5 layer=23 f10 own=True other=False
+[02:33:07] sweep 500 last last a=0.5 layer=24 f10 own=True other=False
+[02:33:17] sweep 520 last last a=2.0 layer=0 f10 own=False other=False
+[02:33:27] sweep 540 last last a=2.0 layer=1 f10 own=False other=False
+[02:33:37] sweep 560 last last a=2.0 layer=2 f10 own=False other=False
+[02:33:47] sweep 580 last last a=2.0 layer=3 f10 own=False other=False
+[02:33:57] sweep 600 last last a=2.0 layer=4 f10 own=False other=False
+[02:34:07] sweep 620 last last a=2.0 layer=5 f10 own=False other=False
+[02:34:16] sweep 640 last last a=2.0 layer=6 f10 own=False other=False
+[02:34:27] sweep 660 last last a=2.0 layer=7 f10 own=False other=False
+[02:34:35] sweep 680 last last a=2.0 layer=8 f10 own=False other=False
+[02:34:40] sweep 700 last last a=2.0 layer=9 f10 own=False other=False
+[02:34:49] sweep 720 last last a=2.0 layer=10 f10 own=False other=False
+[02:34:59] sweep 740 last last a=2.0 layer=11 f10 own=False other=False
+[02:35:14] sweep 760 last last a=2.0 layer=12 f10 own=False other=False
+[02:35:27] sweep 780 last last a=2.0 layer=13 f10 own=False other=False
+[02:35:37] sweep 800 last last a=2.0 layer=14 f10 own=False other=False
+[02:35:47] sweep 820 last last a=2.0 layer=15 f10 own=False other=False
+[02:35:58] sweep 840 last last a=2.0 layer=16 f10 own=True other=False
+[02:36:05] sweep 860 last last a=2.0 layer=17 f10 own=True other=False
+[02:36:11] sweep 880 last last a=2.0 layer=18 f10 own=True other=False
+[02:36:17] sweep 900 last last a=2.0 layer=19 f10 own=True other=False
+[02:36:26] sweep 920 last last a=2.0 layer=20 f10 own=True other=False
+[02:36:32] sweep 940 last last a=2.0 layer=21 f10 own=True other=False
+[02:36:39] sweep 960 last last a=2.0 layer=22 f10 own=True other=False
+[02:36:44] sweep 980 last last a=2.0 layer=23 f10 own=True other=False
+[02:36:48] sweep 1000 last last a=2.0 layer=24 f10 own=True other=False
+[02:36:58] sweep 1020 last mean_at_last a=1.0 layer=0 f10 own=False other=False
+[02:37:07] sweep 1040 last mean_at_last a=1.0 layer=1 f10 own=False other=False
+[02:37:17] sweep 1060 last mean_at_last a=1.0 layer=2 f10 own=False other=False
+[02:37:27] sweep 1080 last mean_at_last a=1.0 layer=3 f10 own=False other=False
+[02:37:37] sweep 1100 last mean_at_last a=1.0 layer=4 f10 own=False other=False
+[02:37:47] sweep 1120 last mean_at_last a=1.0 layer=5 f10 own=False other=False
+[02:37:57] sweep 1140 last mean_at_last a=1.0 layer=6 f10 own=False other=False
+[02:38:01] sweep 1160 last mean_at_last a=1.0 layer=7 f10 own=False other=False
+[02:38:11] sweep 1180 last mean_at_last a=1.0 layer=8 f10 own=False other=False
+[02:38:21] sweep 1200 last mean_at_last a=1.0 layer=9 f10 own=False other=False
+[02:38:31] sweep 1220 last mean_at_last a=1.0 layer=10 f10 own=False other=False
+[02:38:35] sweep 1240 last mean_at_last a=1.0 layer=11 f10 own=False other=False
+[02:38:45] sweep 1260 last mean_at_last a=1.0 layer=12 f10 own=False other=False
+[02:38:54] sweep 1280 last mean_at_last a=1.0 layer=13 f10 own=False other=False
+[02:39:04] sweep 1300 last mean_at_last a=1.0 layer=14 f10 own=False other=False
+[02:39:14] sweep 1320 last mean_at_last a=1.0 layer=15 f10 own=False other=False
+[02:39:24] sweep 1340 last mean_at_last a=1.0 layer=16 f10 own=False other=False
+[02:39:34] sweep 1360 last mean_at_last a=1.0 layer=17 f10 own=False other=False
+[02:39:44] sweep 1380 last mean_at_last a=1.0 layer=18 f10 own=False other=False
+[02:39:53] sweep 1400 last mean_at_last a=1.0 layer=19 f10 own=False other=False
+[02:40:03] sweep 1420 last mean_at_last a=1.0 layer=20 f10 own=False other=False
+[02:40:13] sweep 1440 last mean_at_last a=1.0 layer=21 f10 own=False other=False
+[02:40:23] sweep 1460 last mean_at_last a=1.0 layer=22 f10 own=False other=False
+[02:40:33] sweep 1480 last mean_at_last a=1.0 layer=23 f10 own=False other=False
+[02:40:43] sweep 1500 last mean_at_last a=1.0 layer=24 f10 own=False other=False
+[02:40:43] sweep finished 1500 new gens in 655.3 s
+[02:40:43] wrote D:\knowleen\local-lab\exp_min\outputs\recall\REPORT.md
+[02:40:43] BEST {'direction': 'last', 'alpha': 2.0, 'layer': 20, 'n': 20, 'recall': 0.4, 'intrusion': 0.0, 'score': 0.4, 'loose_recall': 0.4}
+[02:41:33] wrote D:\knowleen\local-lab\exp_min\outputs\recall\REPORT.md
+[02:41:33] BEST {'direction': 'last', 'alpha': 2.0, 'layer': 20, 'n': 20, 'recall': 0.4, 'intrusion': 0.0, 'score': 0.4, 'loose_recall': 0.4}
+[02:46:35] wrote D:\knowleen\local-lab\exp_min\outputs\recall\REPORT.md
+[02:46:35] BEST {'direction': 'last', 'alpha': 2.0, 'layer': 20, 'n': 20, 'recall': 0.4, 'intrusion': 0.0, 'score': 0.4, 'loose_recall': 0.4}

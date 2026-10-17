@@ -10,12 +10,18 @@ Phases: capture, lens, sweep, report
 """
 import argparse, json, os, re, time, datetime
 import numpy as np
+import torch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 LAB = os.path.dirname(HERE)
 DEFAULT_MODEL = os.path.join(LAB, "models", "Qwen3.5-2B")
 SEED = 1234
-CARRIER = "Answer the remembered question with only the final answer."
+CARRIER = "Reply with only the final answer."
+
+def question_text(q):
+    if args.style == "bare":
+        return q["question"]
+    return q["question"].rstrip() + "\nReply with only the final answer."
 NUM_RE = re.compile(r"-?\d+(?:,\d{3})*(?:\.\d+)?")
 
 ap = argparse.ArgumentParser()
@@ -25,6 +31,10 @@ ap.add_argument("--out", default=os.path.join(HERE, "outputs", "recall"))
 ap.add_argument("--phases", default="capture,lens,sweep,report")
 ap.add_argument("--max_new", type=int, default=24)
 ap.add_argument("--alphas", default="0.5,1,2")
+ap.add_argument("--style", choices=["wrapped", "bare"], default="wrapped")
+ap.add_argument("--directions", default="user_end,last,user_mean,all_pos")
+ap.add_argument("--layer-min", type=int, default=0)
+ap.add_argument("--layer-max", type=int, default=99)
 args = ap.parse_args()
 PHASES = [s.strip() for s in args.phases.split(",") if s.strip()]
 ALPHAS = [float(s) for s in args.alphas.split(",") if s.strip()]
@@ -36,8 +46,12 @@ def log(*a):
     with open(os.path.join(args.out, "run.log"), "a", encoding="utf-8") as f:
         f.write(msg + "\n")
 
-def is_correct(ans_text, answers):
-    t = ans_text.lower()
+def answer_body(ans_text):
+    return ans_text.split("<|im_end|>")[0].strip().strip("*").strip()
+
+def is_correct(ans_text, answers, strict=False):
+    body = answer_body(ans_text) if strict else ans_text
+    t = body.lower()
     nums = set()
     for m in NUM_RE.findall(ans_text):
         try:
@@ -47,6 +61,9 @@ def is_correct(ans_text, answers):
     for a in answers:
         if re.fullmatch(r"-?\d+(\.\d+)?", a):
             if float(a) in nums:
+                return True
+        elif strict and len(a) <= 3:
+            if t == a.lower():
                 return True
         elif a.lower() in t:
             return True
@@ -136,7 +153,7 @@ if "capture" in PHASES:
     t0 = time.time()
     log("capture carrier and", len(questions), "questions")
     carrier = capture_prompt(CARRIER)
-    qpacks = [capture_prompt(q["question"]) for q in questions]
+    qpacks = [capture_prompt(question_text(q)) for q in questions]
     # Store user_end / last / user_mean for every layer. Full sequences are large; keep vectors only.
     D = carrier["h"].shape[-1]
     sites = ["user_end", "last", "user_mean"]
@@ -266,20 +283,51 @@ if "sweep" in PHASES:
     last = len(carrier_ids) - 1
     if user_end != meta["carrier_user_end"] or last != meta["carrier_last"]:
         raise SystemExit(f"carrier positions changed: now {user_end},{last} vs {meta['carrier_user_end']},{meta['carrier_last']}")
+    wanted = {s.strip() for s in args.directions.split(",") if s.strip()}
     directions = []
-    for a in ALPHAS:
-        directions.append(("user_end", a, "pos", user_end, "user_end"))
-    directions.append(("last", 1.0, "pos", last, "last"))
-    directions.append(("user_mean", 1.0, "pos", user_end, "user_mean"))
-    directions.append(("all_pos", 1.0, "all", user_end, "user_end"))
+    if "user_end" in wanted:
+        for a in ALPHAS:
+            directions.append(("user_end", a, "pos", user_end, "user_end"))
+    if "last" in wanted:
+        for a in ALPHAS:
+            directions.append(("last", a, "pos", last, "last"))
+    if "mean_at_last" in wanted:
+        directions.append(("mean_at_last", 1.0, "pos", last, "user_mean"))
+    if "user_mean" in wanted:
+        directions.append(("user_mean", 1.0, "pos", user_end, "user_mean"))
+    if "all_pos" in wanted:
+        directions.append(("all_pos", 1.0, "all", user_end, "user_end"))
     seen = done_keys()
     NL = z["q_user_end"].shape[1]
+    # Unpatched carrier: any gold string that appears here is not evidence of recall.
+    if not any(k[0] == "baseline" for k in seen):
+        base = generate_with_patch(carrier_ids, 0, 0, np.zeros(z["carrier_user_end"].shape[-1], np.float32), 0.0, "pos")
+        log("baseline carrier:", base.replace("\n", " ")[:300])
+        for qi, q in enumerate(questions):
+            other = questions[(qi + 1) % len(questions)]
+            rec = {
+                "direction": "baseline", "alpha": 0.0, "layer": -1, "qid": q["id"], "qtype": q["type"],
+                "gold": q["answers"], "other_id": other["id"], "other_gold": other["answers"],
+                "hit_own": is_correct(base, q["answers"]), "hit_other": is_correct(base, other["answers"]),
+                "text": base.replace("\n", " ")[:400],
+            }
+            with open(SWEEP_PATH, "a", encoding="utf-8") as f:
+                f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        seen = done_keys()
+    # One real question, no patch, to see whether the answer fits in max_new tokens.
+    q0 = questions[0]
+    q0_prompt = build_prompt(question_text(q0))
+    q0_ids = tok(q0_prompt, add_special_tokens=False)["input_ids"]
+    q0_text = generate_with_patch(q0_ids, 0, 0, np.zeros(z["carrier_user_end"].shape[-1], np.float32), 0.0, "pos")
+    log("unpatched", q0["id"], "hit", is_correct(q0_text, q0["answers"]), q0_text.replace("\n", " ")[:300])
     t0 = time.time()
     n_new = 0
     for name, alpha, mode, pos, site in directions:
         Q = z[f"q_{site}"]
         C = z[f"carrier_{site}"]
         for li in range(NL):
+            if li < args.layer_min or li > args.layer_max:
+                continue
             for qi, q in enumerate(questions):
                 key = (name, alpha, li, q["id"])
                 if key in seen:
@@ -302,6 +350,19 @@ if "sweep" in PHASES:
                     log(f"sweep {n_new} last {name} a={alpha} layer={li} {q['id']} own={rec['hit_own']} other={rec['hit_other']}")
     log("sweep finished", n_new, "new gens in", round(time.time() - t0, 1), "s")
 
+def strict_hit(text, answers):
+    body = answer_body(text).lower().strip(".,;: ")
+    for a in answers:
+        if re.fullmatch(r"-?\d+(\.\d+)?", a):
+            if body.replace(",", "") == a:
+                return True
+        elif len(a) <= 3:
+            if body == a.lower():
+                return True
+        elif a.lower() in body:
+            return True
+    return False
+
 def summarize():
     rows = [json.loads(l) for l in open(SWEEP_PATH, encoding="utf-8") if l.strip()]
     from collections import defaultdict
@@ -311,46 +372,59 @@ def summarize():
     ranking = []
     for (direction, alpha, layer), rs in groups.items():
         n = len(rs)
-        recall = sum(r["hit_own"] for r in rs) / n
-        intrusion = sum(r["hit_other"] for r in rs) / n
+        recall = sum(strict_hit(r["text"], r["gold"]) for r in rs) / n
+        intrusion = sum(strict_hit(r["text"], r["other_gold"]) for r in rs) / n
+        loose = sum(r["hit_own"] for r in rs) / n
         ranking.append({
             "direction": direction, "alpha": alpha, "layer": layer, "n": n,
             "recall": round(recall, 4), "intrusion": round(intrusion, 4),
-            "score": round(recall - intrusion, 4),
+            "score": round(recall - intrusion, 4), "loose_recall": round(loose, 4),
         })
-    ranking.sort(key=lambda r: (r["score"], -r["layer"]), reverse=True)
+    ranking.sort(key=lambda r: (r["score"], r["recall"], r["layer"]), reverse=True)
+    cands = [r for r in ranking if r["direction"] != "baseline"]
+    best = cands[0] if cands else (ranking[0] if ranking else None)
     # lens summary if present
     lens_lines = []
     if os.path.exists(LENS_PATH):
         lens = json.load(open(LENS_PATH, encoding="utf-8"))
-        buck = defaultdict(list)
-        for r in lens:
-            if r["site"] == "user_end":
-                buck[(r["kind"], r["layer"])].append(r["rank"])
-        lens_lines.append("Median rank of the gold answer's first token at user_end (1 = top of the vocabulary).")
+        lens_lines.append("Median rank of the gold answer's first token (1 = top of the vocabulary).")
+        lens_lines.append("`last` is the position that predicts the first generated token. `user_end` predicts the token after the question, which is still inside the prompt.")
         lens_lines.append("")
-        lens_lines.append("| layer | rank from residual | rank from delta |")
-        lens_lines.append("|---|---|---|")
-        layers_present = sorted({k[1] for k in buck})
+        lens_lines.append("| layer | user_end residual | last residual | last delta |")
+        lens_lines.append("|---|---|---|---|")
+        buck2 = defaultdict(list)
+        for r in lens:
+            buck2[(r["site"], r["kind"], r["layer"])].append(r["rank"])
+        layers_present = sorted({k[2] for k in buck2})
         for li in layers_present:
-            rh = int(np.median(buck.get(("h", li), [0])))
-            rd = int(np.median(buck.get(("delta", li), [0])))
-            lens_lines.append(f"| {li} | {rh} | {rd} |")
-    best = ranking[0] if ranking else None
+            a = int(np.median(buck2.get(("user_end", "h", li), [0])))
+            b = int(np.median(buck2.get(("last", "h", li), [0])))
+            c = int(np.median(buck2.get(("last", "delta", li), [0])))
+            lens_lines.append(f"| {li} | {a} | {b} | {c} |")
     lines = []
     lines.append("# Recall sweep")
     lines.append("")
-    lines.append(f"Carrier prompt, thinking off: `{CARRIER}`")
+    lines.append(f"Question style: `{args.style}`. Carrier, thinking off: `{CARRIER}`")
     lines.append("")
-    lines.append("The carrier does not contain the question. Each trial adds `alpha * (h_question - h_carrier)` at one layer during prefill, then greedy-decodes up to "
-                 f"{args.max_new} new tokens. `recall` is the fraction of trials whose text contains that question's answer. "
-                 "`intrusion` is the fraction that contains the next question's answer. `score = recall - intrusion`.")
+    if args.style == "wrapped":
+        lines.append("Each stored question ends with “Reply with only the final answer.” The carrier is only that sentence, so the question text is absent at recall time.")
+    else:
+        lines.append("Each stored question is the original wording, with no extra instruction. The carrier is still only “Reply with only the final answer.”")
+    lines.append("Each trial adds `alpha * (h_question - h_carrier)` at one site during prefill, then greedy-decodes up to "
+                 f"{args.max_new} new tokens. A number counts only when it is the whole reply. A short string such as Au counts only when it is the whole reply. A longer name may appear inside the reply. "
+                 "`intrusion` applies the same test to the next question's answer. `score = recall - intrusion`.")
     lines.append("")
     lines.append("Layer 0 is the embedding output. Layers 1–24 are decoder blocks. Full-attention blocks are 4, 8, 12, 16, 20, 24.")
     lines.append("")
     if best:
         lines.append(f"Highest score in this run: **{best['direction']} / alpha {best['alpha']} / layer {best['layer']}** "
                      f"(recall {best['recall']}, intrusion {best['intrusion']}, score {best['score']}, n={best['n']}).")
+        lines.append("")
+        lines.append("## Best-layer replies")
+        lines.append("")
+        for r in groups[(best["direction"], best["alpha"], best["layer"])]:
+            mark = "hit" if strict_hit(r["text"], r["gold"]) else "miss"
+            lines.append(f"- {r['qid']} {mark}: {r['text'][:180]}")
         lines.append("")
     lines.append("## Ranking")
     lines.append("")

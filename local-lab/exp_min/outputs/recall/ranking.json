@@ -1,0 +1,2262 @@
+[
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.4,
+    "intrusion": 0.0,
+    "score": 0.4,
+    "loose_recall": 0.4
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.4,
+    "intrusion": 0.05,
+    "score": 0.35,
+    "loose_recall": 0.45
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.35,
+    "intrusion": 0.0,
+    "score": 0.35,
+    "loose_recall": 0.4
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.35,
+    "intrusion": 0.0,
+    "score": 0.35,
+    "loose_recall": 0.4
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.35,
+    "intrusion": 0.05,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.35
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.3,
+    "intrusion": 0.0,
+    "score": 0.3,
+    "loose_recall": 0.3
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.25,
+    "intrusion": 0.0,
+    "score": 0.25,
+    "loose_recall": 0.3
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.25,
+    "intrusion": 0.0,
+    "score": 0.25,
+    "loose_recall": 0.3
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.25,
+    "intrusion": 0.0,
+    "score": 0.25,
+    "loose_recall": 0.3
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.25,
+    "intrusion": 0.0,
+    "score": 0.25,
+    "loose_recall": 0.25
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.2,
+    "intrusion": 0.0,
+    "score": 0.2,
+    "loose_recall": 0.2
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.2,
+    "intrusion": 0.05,
+    "score": 0.15,
+    "loose_recall": 0.2
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.15,
+    "intrusion": 0.0,
+    "score": 0.15,
+    "loose_recall": 0.2
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.15,
+    "intrusion": 0.0,
+    "score": 0.15,
+    "loose_recall": 0.2
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.1,
+    "intrusion": 0.0,
+    "score": 0.1,
+    "loose_recall": 0.1
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.05,
+    "intrusion": 0.0,
+    "score": 0.05,
+    "loose_recall": 0.05
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.05,
+    "intrusion": 0.0,
+    "score": 0.05,
+    "loose_recall": 0.05
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.05,
+    "intrusion": 0.0,
+    "score": 0.05,
+    "loose_recall": 0.05
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.05,
+    "intrusion": 0.0,
+    "score": 0.05,
+    "loose_recall": 0.05
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.05,
+    "intrusion": 0.0,
+    "score": 0.05,
+    "loose_recall": 0.05
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 24,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 23,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 22,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 21,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 20,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 19,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 18,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 17,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 16,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 15,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 14,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 13,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 12,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 11,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 10,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 9,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 8,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 7,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 6,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 5,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 4,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 3,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 2,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 0.5,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 1.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_end",
+    "alpha": 2.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 1.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "user_mean",
+    "alpha": 1.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "all_pos",
+    "alpha": 1.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 0.5,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "last",
+    "alpha": 2.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "mean_at_last",
+    "alpha": 1.0,
+    "layer": 0,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  },
+  {
+    "direction": "baseline",
+    "alpha": 0.0,
+    "layer": -1,
+    "n": 20,
+    "recall": 0.0,
+    "intrusion": 0.0,
+    "score": 0.0,
+    "loose_recall": 0.0
+  }
+]

@@ -1,0 +1,31 @@
+[02:41:38] loading model
+[02:41:41] loaded Qwen3_5ForCausalLM layers 24 vram_gb 3.505
+[02:41:41] capture carrier and 20 questions
+[02:41:46] capture done 5.3 s; user_end delta L2 median per layer [0.69, 1.1, 1.67, 3.06, 3.77, 4.16, 4.12, 5.38, 4.84, 5.49, 5.55, 6.1, 6.3, 6.69, 7.52, 9.22, 10.56, 12.53, 13.97, 15.38, 16.86, 18.52, 20.39, 22.61, 30.86]
+[02:41:46] logit lens over 25 layers
+[02:41:48] lens user_end median gold rank by layer {'0': 47, '1': 224192, '2': 245287, '3': 231325, '4': 242284, '5': 194570, '6': 233657, '7': 181632, '8': 212047, '9': 152193, '10': 194249, '11': 205638, '12': 178041, '13': 167553, '14': 107569, '15': 124660, '16': 172398, '17': 140828, '18': 128425, '19': 55568, '20': 64731, '21': 132621, '22': 134043, '23': 22706, '24': 700}
+[02:41:48] baseline carrier: Please provide the question you would like me to answer.<|im_end|>
+[02:41:52] unpatched a01 hit True To find out how many apples Tom has left, we can follow these steps:  1.  **Calculate the total number of apples initially**:     Tom has 3 boxes, and each box contains 12 apples.     $$12 \text{ apples/box} \times 3 \text{ boxes} = 36 \text{ apples}$$  2.  **Subtract the apples given away**:     He
+[02:42:02] sweep 20 last user_end a=1.0 layer=16 f10 own=False other=False
+[02:42:12] sweep 40 last user_end a=1.0 layer=17 f10 own=False other=False
+[02:42:22] sweep 60 last user_end a=1.0 layer=18 f10 own=False other=False
+[02:42:32] sweep 80 last user_end a=1.0 layer=19 f10 own=False other=False
+[02:42:41] sweep 100 last user_end a=1.0 layer=20 f10 own=False other=False
+[02:42:51] sweep 120 last user_end a=1.0 layer=21 f10 own=False other=False
+[02:43:01] sweep 140 last user_end a=1.0 layer=22 f10 own=False other=False
+[02:43:11] sweep 160 last user_end a=1.0 layer=23 f10 own=False other=False
+[02:43:21] sweep 180 last user_end a=1.0 layer=24 f10 own=False other=False
+[02:43:35] sweep 200 last last a=1.0 layer=16 f10 own=False other=False
+[02:43:48] sweep 220 last last a=1.0 layer=17 f10 own=False other=False
+[02:44:02] sweep 240 last last a=1.0 layer=18 f10 own=False other=False
+[02:44:15] sweep 260 last last a=1.0 layer=19 f10 own=False other=False
+[02:44:30] sweep 280 last last a=1.0 layer=20 f10 own=False other=False
+[02:44:46] sweep 300 last last a=1.0 layer=21 f10 own=False other=False
+[02:45:01] sweep 320 last last a=1.0 layer=22 f10 own=False other=False
+[02:45:17] sweep 340 last last a=1.0 layer=23 f10 own=False other=False
+[02:45:32] sweep 360 last last a=1.0 layer=24 f10 own=False other=False
+[02:45:32] sweep finished 360 new gens in 219.9 s
+[02:45:32] wrote D:\knowleen\local-lab\exp_min\outputs\recall_bare\REPORT.md
+[02:45:32] BEST {'direction': 'baseline', 'alpha': 0.0, 'layer': -1, 'n': 20, 'recall': 0.0, 'intrusion': 0.0, 'score': 0.0, 'loose_recall': 0.0}
+[02:46:37] wrote D:\knowleen\local-lab\exp_min\outputs\recall_bare\REPORT.md
+[02:46:37] BEST {'direction': 'user_end', 'alpha': 1.0, 'layer': 24, 'n': 20, 'recall': 0.0, 'intrusion': 0.0, 'score': 0.0, 'loose_recall': 0.0}

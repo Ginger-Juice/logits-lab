@@ -1,0 +1,7 @@
+a,b,prompt_jaccard_mean,prompt_len_absdiff_mean
+off,low,0.7298146601534838,28.0
+off,medium,0.9649638861170378,2.0
+off,xhigh,0.6800222548223963,40.0
+low,medium,0.7494098351384887,30.0
+low,xhigh,0.6776497293745202,12.0
+medium,xhigh,0.6969625177012203,42.0

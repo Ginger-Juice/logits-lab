@@ -1,0 +1,11 @@
+# 环境（memory pilot，2026-10-18，纯 CPU）
+- 服务器：AutoDL RTX 5090（实例本来就开着，没做启停或改配置）。**没用 GPU**：设置了 CUDA_VISIBLE_DEVICES=，运行前后 nvidia-smi 都是 0 MiB；没起 SGLang，没加载模型
+- SSH：在 Windows PowerShell（machine 34ee31ac-...）上执行 `ssh -p 40351 root@connect.westd.seetacloud.com`。box 不能直接 SSH
+- Python：/root/miniconda3/envs/qwen38/bin/python，环境没动。numpy 2.3.5、scikit-learn 1.9.0、pandas、joblib
+- matplotlib：复用现成的 /root/autodl-tmp/snape-ctx/pylib_plot（3.11.2）。plot.py 里用 sys.path.append 加到搜索路径**末尾**，环境自带的 numpy 2.3.5 优先，所以没装任何新包，也没建 pylib_mem
+- 输入（只读）：/root/autodl-tmp/layer-probe/pipeline_v1/outputs/features_{off,low,medium,xhigh}.npz、generations.jsonl；/root/autodl-tmp/qwen38-27b-fp8/config.json（只读 layer_types）
+- 输出：/root/autodl-tmp/layer-probe/pipeline_v1/memory_pilot/{scripts,results,logs}
+- 层编号：特征 index 0 是 embedding，index i 是第 i-1 个 decoder 层（从 0 计）的输出。config 的 layer_types 里 full_attention 对应 1-indexed 的 4,8,…,64，也就是特征 index 4,8,…,64，共 16 层（脚本里有 assert 校验）。其余 48 层是 GDN（linear_attention）
+- NaN：off 的 think_mean 40 行全是 NaN（没有 think 段）；xhigh 的 think_end 和 answer_start 在 qid 304、552 上是 NaN（think 被截断）。retrieval 只在两边都有效的 qid 上算；decoding 直接丢掉这些行。见 results/nan_report.csv
+- 运行耗时约 115 s（decoding 用 joblib 开 64 进程，BLAS 单线程）
+- 传文件：box → CopyFromBox 到 C:\Users\ASUS\mem_pilot_stage\ → scp 到服务器。最早试过直接在命令行贴 base64，粘贴出错导致 CRC 校验失败，所以改用这种方式；每一步都核对了 md5
